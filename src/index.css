@@ -69,3 +69,39 @@ body {
   font-family: inherit;
   height: 150px;
 }
+
+.next-page {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.next-page svg {
+  font-size: 24px;
+}
+
+.next-page:hover svg {
+  animation: animation-robot .5s infinite;
+}
+
+@keyframes animation-robot {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
